@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!-- saved from url=(0152)https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/551d4f858a140269d56ceb94007983f9/a1678fd0-de79-49f7-9db0-2a556ec1da39/index.html -->
+<html lang="de"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haus &amp; Garten Aufgaben</title>
+    <link rel="stylesheet" href="./Haus &amp; Garten Aufgaben_files/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="app-header">
+            <h1>🏠 Haus &amp; Garten Aufgaben</h1>
+            <div class="header-controls">
+                <button id="toggleCompleted" class="btn btn--secondary btn--sm">
+                    <span id="toggleText">Erledigte ausblenden</span>
+                </button>
+            </div>
+        </header>
+
+        <nav class="tab-navigation">
+            <button class="tab-btn active" data-tab="haus">
+                🏠 Hausarbeiten
+            </button>
+            <button class="tab-btn" data-tab="garten">
+                🌱 Gartenarbeiten
+            </button>
+        </nav>
+
+        <main class="main-content">
+            <div id="haus-tab" class="tab-content active">
+                <div class="tab-header">
+                    <h2>Hausarbeiten</h2>
+                    <button class="btn btn--primary" id="addHausTask">
+                        + Aufgabe hinzufügen
+                    </button>
+                </div>
+                <div id="haus-tasks" class="tasks-container">
+        <div class="task-card " data-task-id="1">
+            <input type="checkbox" class="task-checkbox" data-task-id="1">
+            <div class="task-content">
+                <h4 class="task-title">Heizung warten lassen</h4>
+                <span class="task-priority priority-hoch">hoch</span>
+            </div>
+            <div class="task-actions">
+                <button class="task-delete" data-task-id="1" title="Aufgabe löschen">
+                    🗑️
+                </button>
+            </div>
+        </div>
+    
+        <div class="task-card " data-task-id="5">
+            <input type="checkbox" class="task-checkbox" data-task-id="5">
+            <div class="task-content">
+                <h4 class="task-title">Badezimmer neu verfugen</h4>
+                <span class="task-priority priority-hoch">hoch</span>
+            </div>
+            <div class="task-actions">
+                <button class="task-delete" data-task-id="5" title="Aufgabe löschen">
+                    🗑️
+                </button>
+            </div>
+        </div>
+    
+        <div class="task-card " data-task-id="2">
+            <input type="checkbox" class="task-checkbox" data-task-id="2">
+            <div class="task-content">
+                <h4 class="task-title">Dachrinne reinigen</h4>
+                <span class="task-priority priority-mittel">mittel</span>
+            </div>
+            <div class="task-actions">
+                <button class="task-delete" data-task-id="2" title="Aufgabe löschen">
+                    🗑️
+                </button>
+            </div>
+        </div>
+    
+        <div class="task-card " data-task-id="4">
+            <input type="checkbox" class="task-checkbox" data-task-id="4">
+            <div class="task-content">
+                <h4 class="task-title">Keller aufräumen</h4>
+                <span class="task-priority priority-mittel">mittel</span>
+            </div>
+            <div class="task-actions">
+                <button class="task-delete" data-task-id="4" title="Aufgabe löschen">
+                    🗑️
+                </button>
+            </div>
+        </div>
+    
+        <div class="task-card " data-task-id="3">
+            <input type="checkbox" class="task-checkbox" data-task-id="3">
+            <div class="task-content">
+                <h4 class="task-title">Fenster putzen</h4>
+                <span class="task-priority priority-niedrig">niedrig</span>
+            </div>
+            <div class="task-actions">
+                <button class="task-delete" data-task-id="3" title="Aufgabe löschen">
+                    🗑️
+                </button>
+            </div>
+        </div>
+    </div>
+            </div>
+
+            <div id="garten-tab" class="tab-content">
+                <div class="tab-header">
+                    <h2>Gartenarbeiten</h2>
+                    <button class="btn btn--primary" id="addGartenTask">
+                        + Aufgabe hinzufügen
+                    </button>
+                </div>
+                <div id="garten-tasks" class="tasks-container">
+        <div class="task-card " data-task-id="6">
+            <input type="checkbox" class="task-checkbox" data-task-id="6">
+            <div class="task-content">
+                <h4 class="task-title">Rasen vertikutieren</h4>
+                <span class="task-priority priority-hoch">hoch</span>
+            </div>
+            <div class="task-actions">
+                <button class="task-delete" data-task-id="6" title="Aufgabe löschen">
+                    🗑️
+                </button>
+            </div>
+        </div>
+    
+        <div class="task-card " data-task-id="7">
+            <input type="checkbox" class="task-checkbox" data-task-id="7">
+            <div class="task-content">
+                <h4 class="task-title">Hecke schneiden</h4>
+                <span class="task-priority priority-mittel">mittel</span>
+            </div>
+            <div class="task-actions">
+                <button class="task-delete" data-task-id="7" title="Aufgabe löschen">
+                    🗑️
+                </button>
+            </div>
+        </div>
+    
+        <div class="task-card " data-task-id="9">
+            <input type="checkbox" class="task-checkbox" data-task-id="9">
+            <div class="task-content">
+                <h4 class="task-title">Gartenschuppen aufräumen</h4>
+                <span class="task-priority priority-mittel">mittel</span>
+            </div>
+            <div class="task-actions">
+                <button class="task-delete" data-task-id="9" title="Aufgabe löschen">
+                    🗑️
+                </button>
+            </div>
+        </div>
+    
+        <div class="task-card " data-task-id="8">
+            <input type="checkbox" class="task-checkbox" data-task-id="8">
+            <div class="task-content">
+                <h4 class="task-title">Blumenbeete umgraben</h4>
+                <span class="task-priority priority-niedrig">niedrig</span>
+            </div>
+            <div class="task-actions">
+                <button class="task-delete" data-task-id="8" title="Aufgabe löschen">
+                    🗑️
+                </button>
+            </div>
+        </div>
+    
+        <div class="task-card " data-task-id="10">
+            <input type="checkbox" class="task-checkbox" data-task-id="10">
+            <div class="task-content">
+                <h4 class="task-title">Terrassenmöbel streichen</h4>
+                <span class="task-priority priority-niedrig">niedrig</span>
+            </div>
+            <div class="task-actions">
+                <button class="task-delete" data-task-id="10" title="Aufgabe löschen">
+                    🗑️
+                </button>
+            </div>
+        </div>
+    </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal für neue Aufgabe -->
+    <div id="taskModal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Neue Aufgabe hinzufügen</h3>
+                <button class="modal-close" id="closeModal">×</button>
+            </div>
+            <form id="taskForm">
+                <div class="form-group">
+                    <label for="taskTitle" class="form-label">Aufgabe</label>
+                    <input type="text" id="taskTitle" class="form-control" placeholder="Beschreibung der Aufgabe..." required="">
+                </div>
+                <div class="form-group">
+                    <label for="taskPriority" class="form-label">Priorität</label>
+                    <select id="taskPriority" class="form-control">
+                        <option value="niedrig">Niedrig</option>
+                        <option value="mittel" selected="">Mittel</option>
+                        <option value="hoch">Hoch</option>
+                    </select>
+                </div>
+                <div class="modal-actions">
+                    <button type="button" class="btn btn--secondary" id="cancelTask">Abbrechen</button>
+                    <button type="submit" class="btn btn--primary">Speichern</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bestätigungsdialog -->
+    <div id="confirmModal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Aufgabe löschen</h3>
+            </div>
+            <p>Möchten Sie diese Aufgabe wirklich löschen?</p>
+            <div class="modal-actions">
+                <button class="btn btn--secondary" id="cancelDelete">Abbrechen</button>
+                <button class="btn btn--primary" id="confirmDelete">Löschen</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./Haus &amp; Garten Aufgaben_files/app.js.Download"></script>
+
+</body></html>
